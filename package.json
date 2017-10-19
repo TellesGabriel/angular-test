@@ -4,14 +4,12 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "http-server",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "tslint \"src/**/*.ts\"",
-    "pree2e": "webdriver-manager update",
-    "e2e": "protractor",
-    "preinstall": "npm install -g http-server @angular/cli",
-    "postinstall": "ng build --prod && mv dist/* ."
+    "lint": "ng lint",
+    "preinstall": "npm install -g @angular/cli",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
